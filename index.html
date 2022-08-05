@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="quan">
+<select name="" id="qu">
+  <option value="a">VND</option>
+  <option value="b">USD</option>
+</select>
+<select name="" id="an">
+  <option value="a">VND</option>
+  <option value="b">USD</option>
+</select>
+<button onclick="cdtt()">Convert</button>
+<script>
+  function cdtt() {
+    let giatrivao= document.getElementById('quan').value;
+    let qu= document.getElementById('qu').value;
+    let an= document.getElementById('an').value;
+    if (qu==an) {
+      alert(giatrivao)
+    }
+    if (qu=="a" && an=="b") {
+      alert(giatrivao/23000);
+    }
+      if (qu=="b" && an=="a") {
+          alert(giatrivao*23000);
+      }
+  }
+
+</script>
+</body>
+</html>
